@@ -1,0 +1,99 @@
+/* Visual simples, seguindo o formato do exemplo, com ajustes para celular. */
+body {
+    margin: 8px;
+    color: #000;
+    background: #fff;
+    font-family: 'Times New Roman', serif;
+}
+
+.projeto {
+    padding: 0 20px;
+}
+
+.projeto h1 {
+    margin: 0.67em 0;
+    font-family: 'Times New Roman', serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.projeto h2 {
+    margin: 0.83em 0;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.projeto p {
+    margin: 1em 0;
+    line-height: 1.45;
+}
+
+.foto-perfil {
+    display: block;
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    object-position: center 35%;
+    margin-bottom: 14px;
+}
+
+.sites {
+    padding-left: 35px;
+}
+
+.sites li {
+    min-height: 38px;
+    margin: 4px 0;
+}
+
+.sites img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.tabela-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.tabela-preferencias {
+    width: auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 16px;
+    background: #fff;
+}
+
+.tabela-preferencias th,
+.tabela-preferencias td {
+    border: 1px solid #000;
+    padding: 3px 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tabela-preferencias th {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .projeto {
+        padding: 0 8px;
+    }
+
+    .tabela-preferencias {
+        min-width: 0;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .tabela-preferencias th,
+    .tabela-preferencias td {
+        overflow-wrap: anywhere;
+    }
+}
